@@ -1,0 +1,119 @@
+
+body {
+    background-color: #6075A2;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    min-height: 99.5vh;
+}
+main {
+    flex: 1;
+}
+header {
+    font-family: Caveat;
+    font-size: 55px;
+    font-weight: bolder;
+    width: fit-content;
+    margin: 20px auto;
+    text-decoration: underline;
+    color: #f0d10f;
+}
+#display-screen {
+    /* grid-area: row-start / column-start / row-end / column-end
+    grid-area: 1 / 1 / 2 / 5; */
+    grid-area: header;
+    border: 1px solid black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #4F9FAB;
+    color: #181d29;
+    font-size: 38px;
+}
+#clear {
+    /* grid-area: 2 / 1 / 3 / 3; */
+    grid-area: clear;
+}
+#delete {
+    /* grid-area: 2 / 3 / 3 / 5; */
+    grid-area: delete;
+}
+#sign {
+    grid-area: sign;
+}
+.buttons {
+    font-family: Pangolin;
+    font-size: large;
+    border-radius: 5px;
+}
+.buttons:focus {
+    outline: none;
+}
+.keys{
+    color: #222;
+    font-weight: 500;
+    font-size: 25px;
+}
+.keys:hover{
+    background-color: #ccc;
+}
+.numbers{
+    background-color: #111;
+    color: white;
+}
+.numbers:hover {
+    background-color: #222;
+}
+#decimal {
+    /* background-color: #111;
+    color: white;
+    border-radius: 5px; */
+    font-weight: bolder;
+}
+.operators {
+    background-color: #f79e00;
+    font-size: 25px;
+}
+.operators:hover {
+    background-color: #f9b439;
+}
+#container {
+    font-family: Pangolin;
+    font-size: 30px;
+    width: fit-content;
+    padding: 20px 15px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: 80px repeat(5, 60px);
+    grid-template-areas: 
+        "header header header header"
+        "clear clear sign delete";
+
+    row-gap: 10px;
+    column-gap: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 3px rgba(50, 50, 50, 0.5), 0 0 3px 4px rgba(50, 50, 50, 0.3);
+    background-color: #273043;
+}
+footer {
+    font-family: Dancing Script;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: #1ecbe1;
+    display: flex;
+    flex-flow: row wrap;
+    border-top: 2px solid black;
+    padding: 0px 30px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    justify-content: space-between;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+}
+footer a:hover {
+    color: rgb(255, 0, 191);
+}
