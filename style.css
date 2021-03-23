@@ -97,6 +97,12 @@ header {
     box-shadow: 0 0 2px 3px rgba(50, 50, 50, 0.5), 0 0 3px 4px rgba(50, 50, 50, 0.3);
     background-color: #273043;
 }
+#error {
+    margin: 5px;
+    font-family: Pangolin;
+    text-align: center;
+    font-size: 24px;
+}
 footer {
     font-family: Dancing Script;
     font-weight: bold;
@@ -110,10 +116,13 @@ footer {
     padding-bottom: 18px;
     justify-content: space-between;
 }
-footer a{
+footer>a{
     text-decoration: none;
     color: #000;
 }
-footer a:hover {
+footer>a:hover {
     color: rgb(255, 0, 191);
+}
+.activated {
+    background-color: #f9b439;
 }
