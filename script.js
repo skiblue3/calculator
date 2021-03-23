@@ -118,6 +118,11 @@ keys.forEach(key => {
     key.addEventListener('click', () => {
         let value = key.getAttribute('id');
         if (value == 'sign') {              // if sign button is clicked, changes the sign of number and display
+            if (a==null) {
+                total *= -1;
+                display.textContent = total;
+                return;
+            }
             a *= -1;
             display.textContent = a;
         } else if (value == 'clear') {      // clears everything as it mentions
